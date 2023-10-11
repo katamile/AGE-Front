@@ -10,7 +10,6 @@
   <ItemGroup>
     <Folder Include="Controllers\Age\" />
     <Folder Include="Models\Age\" />
-    <Folder Include="Views\Age\" />
     <Folder Include="wwwroot\images\" />
   </ItemGroup>
 
@@ -24,7 +23,7 @@
 	</ItemGroup>
 
 	<Target Name="Tailwind" BeforeTargets="Build">
-		<Exec Command="npm run css:build"/>
+		<Exec Command="npm run css:build" />
 	</Target>
 
 </Project>
