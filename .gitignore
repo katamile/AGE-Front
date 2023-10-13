@@ -35,3 +35,5 @@
 *.lock
 /cglass-plantilla/obj/Debug/net6.0/ref/cglass-plantilla.dll
 /cglass-plantilla/obj/Debug/net6.0/refint/cglass-plantilla.dll
+/cglass-plantilla/obj/Debug/net6.0/cglass-plantilla.csproj.AssemblyReference.cache
+*.suo
