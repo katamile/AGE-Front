@@ -2,8 +2,19 @@
     ViewData["Title"] = "Home Page";
 }
 
+<div class="flex flex-wrap p-3">
+    <label for="año" class="text-blueGray-400 uppercase font-bold text-xs"> Escoja un año</label>
+    <select id="año" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+        <option selected>--</option>
+        <option value="2022">2022</option>
+        <option value="2023">2023</option>
+        <option value="2024">2024</option>
+        <option value="2025">2025</option>
+    </select>
+</div>
+
 <div class="flex flex-wrap">
-    <div class="mt-0 w-9/12 lg:w-8/12 xl:w-4/12 px-3 mb-2">
+    <div class="mt-0 w-5/12 lg:w-4/12 xl:w-3/12 px-3 mb-2">
         <div class="relative flex flex-col min-w-0 break-words bg-white rounded mb-3 xl:mb-0 shadow-lg">
             <div class="flex-auto p-4">
                 <div class="flex flex-wrap">
@@ -25,7 +36,7 @@
         </div>
     </div>
 
-    <div class="mt-0 w-9/12 lg:w-8/12 xl:w-4/12 px-3 mb-2">
+    <div class="mt-0 w-5/12 lg:w-4/12 xl:w-3/12 px-3 mb-2">
         <div class="relative flex flex-col min-w-0 break-words bg-white rounded mb-4 xl:mb-0 shadow-lg">
             <div class="flex-auto p-4">
                 <div class="flex flex-wrap">
@@ -47,7 +58,29 @@
         </div>
     </div>
 
-    <div class="mt-0 w-9/12 lg:w-8/12 xl:w-4/12 px-3 mb-2">
+    <div class="mt-0 w-5/12 lg:w-4/12 xl:w-3/12 px-3 mb-2">
+        <div class="relative flex flex-col min-w-0 break-words bg-white rounded mb-6 xl:mb-0 shadow-lg">
+            <div class="flex-auto p-4">
+                <div class="flex flex-wrap">
+                    <div class="relative w-full pr-4 max-w-full flex-grow flex-1">
+                        <h5 class="text-blueGray-400 uppercase font-bold text-xs">Sales</h5>
+                        <span class="font-semibold text-xl text-blueGray-700">901</span>
+                    </div>
+                    <div class="relative w-auto pl-4 flex-initial">
+                        <div class="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 shadow-lg rounded-full  bg-blue-500">
+                            <i class="bx bx-money"></i>
+                        </div>
+                    </div>
+                </div>
+                <p class="text-sm text-blueGray-400 mt-4">
+                    <span class="text-red-500 mr-2"><i class="fas fa-arrow-down"></i> 1,25% </span>
+                    <span class="whitespace-nowrap"> Since yesterday </span>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="mt-0 w-5/12 lg:w-4/12 xl:w-3/12 px-3 mb-2">
         <div class="relative flex flex-col min-w-0 break-words bg-white rounded mb-6 xl:mb-0 shadow-lg">
             <div class="flex-auto p-4">
                 <div class="flex flex-wrap">
@@ -85,73 +118,24 @@
             <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
                 <tr>
                     <th scope="col" class="px-6 py-3">
-                        Product name
+                        Código
                     </th>
                     <th scope="col" class="px-6 py-3">
-                        Color
+                        Grupo Contable
                     </th>
                     <th scope="col" class="px-6 py-3">
-                        Category
+                        Descripción
                     </th>
                     <th scope="col" class="px-6 py-3">
-                        Price
+                        Saldo Debe
                     </th>
                     <th scope="col" class="px-6 py-3">
-                        <span class="sr-only">Edit</span>
+                        Saldo Haber
                     </th>
                 </tr>
             </thead>
             <tbody>
                 <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
-                    <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                        Apple MacBook Pro 17"
-                    </th>
-                    <td class="px-6 py-4">
-                        Silver
-                    </td>
-                    <td class="px-6 py-4">
-                        Laptop
-                    </td>
-                    <td class="px-6 py-4">
-                        $2999
-                    </td>
-                    <td class="px-6 py-4 text-right">
-                        <a href="#" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Edit</a>
-                    </td>
-                </tr>
-                <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
-                    <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                        Microsoft Surface Pro
-                    </th>
-                    <td class="px-6 py-4">
-                        White
-                    </td>
-                    <td class="px-6 py-4">
-                        Laptop PC
-                    </td>
-                    <td class="px-6 py-4">
-                        $1999
-                    </td>
-                    <td class="px-6 py-4 text-right">
-                        <a href="#" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Edit</a>
-                    </td>
-                </tr>
-                <tr class="bg-white dark:bg-gray-800 hover:bg-gray-50 dark:hover:bg-gray-600">
-                    <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                        Magic Mouse 2
-                    </th>
-                    <td class="px-6 py-4">
-                        Black
-                    </td>
-                    <td class="px-6 py-4">
-                        Accessories
-                    </td>
-                    <td class="px-6 py-4">
-                        $99
-                    </td>
-                    <td class="px-6 py-4 text-right">
-                        <a href="#" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Edit</a>
-                    </td>
                 </tr>
             </tbody>
         </table>
